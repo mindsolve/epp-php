@@ -44,15 +44,15 @@
         echo("<td>" . $jahr . "</td>");
 
         // Kapital Jahresanfang
-        echo("<td>" . $kapital . "</td>");
+        echo("<td>" . round($kapital, 2) . "</td>");
 
         // Zinsen
         $zinsen = ($kapital * $zinssatz) / 100;
-        echo("<td>" . $zinsen . "</td>");
+        echo("<td>" . round($zinsen, 2) . "</td>");
 
         // Kapital Jahresende
         $kapital += $zinsen;
-        echo("<td>" . $kapital . "</td>");
+        echo("<td>" . round($kapital, 2) . "</td>");
 
         echo("</tr>");
     }

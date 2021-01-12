@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-    <title>03: 02 Tabelle Erzeugen</title>
+    <title>03: Zusatzaufgabe</title>
     <meta charset="utf-8">
     <style>
         table, th, td {

@@ -7,6 +7,7 @@
 <body>
 
 <ol>
+    <!-- Variante 1: Zwei Schleifen -->
     <?php
 
     for ($i = 1; $i < 10; $i++) {
@@ -18,6 +19,22 @@
 
         echo("Hey");
         echo("</li>");
+    }
+
+    ?>
+</ol>
+
+<ol>
+    <!-- Variante 2: Eine Schleife mit Text-Variable -->
+    <?php
+
+    $hey = "Hey";
+    for ($i = 1; $i < 10; $i++) {
+        echo("<li>");
+        echo($hey);
+        echo("</li>");
+
+        $hey .= " Hey";
     }
 
     ?>

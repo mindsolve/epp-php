@@ -1,2 +1,2 @@
-# epp-php
-ITB82 PHP
+# ITB82: PHP Epping
+

@@ -32,7 +32,7 @@
     <?php
 
     // Startkapital
-    $kapital = 1000;
+    $kapital = 1200;
 
     // Zinssatz
     $zinssatz = 1.25;

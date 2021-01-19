@@ -47,6 +47,9 @@
 
         $firstname = $_POST["vorname"];
         $lastname = $_POST["nachname"];
+
+        // Die Funktion 'ucfirst()' schreibt den ersten Buchstaben eines Strings groß, falls möglich.
+        // Beispiel: 'wasser' -> 'Wasser'
         $drink = ucfirst($_POST["trinken"]);
 
 

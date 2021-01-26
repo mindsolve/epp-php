@@ -72,6 +72,15 @@
             // nach float (also einer Kommazahl).
             // Alternativ ließe sich die Funktion floatval() [nach float] oder intval() [nach integer] benutzen
 
+            // PHP versucht automatisch den passenden Datentyp zu finden bzw. zu konvertieren.
+            // Siehe: https://www.php.net/manual/de/language.types.type-juggling.php
+            // In diesem Beispiel würde es also reichen, wenn wir nicht explizit konvertieren.
+            // $kaptial = $_POST["statkapital"]
+            // -> $kaptial ist jetzt ein `string`
+            // echo(round($kapital))
+            // -> $kaptial wird jetzt automatisch in einen int oder float konvertiert
+
+
             // Startkapital
             $kapital = (float)$_POST["startkapital"];
 

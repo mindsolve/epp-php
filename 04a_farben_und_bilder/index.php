@@ -6,7 +6,7 @@
     <title>PHP-Kurs Kapitel 04</title>
     <style>
         <?php if (isset($_POST["back-color"])) { ?>
-        .wrapper {
+        body {
             background-color: <?php echo($_POST["back-color"]) ?>;
         }
         <?php } ?>

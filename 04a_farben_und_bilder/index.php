@@ -20,6 +20,7 @@
         <?php
 
         switch ($_POST["image"]) {
+            default:
             case "murray":
                 $bild = "https://assets.cdn.moviepilot.de/files/58554a4997548bee5cef3437711d8b0368c7375c743bc4a6eeb09578fabe/fill/1200/576/Murmeltier.jpg";
                 break;
@@ -28,9 +29,6 @@
                 break;
             case "hanks":
                 $bild = "https://media.tegna-media.com/assets/WQAD/images/0b0bb3e8-97ef-4b1b-8048-6e9249b1cd4f/0b0bb3e8-97ef-4b1b-8048-6e9249b1cd4f_750x422.jpg";
-                break;
-            default:
-                $bild = "https://http.cat/404";
                 break;
         }
         ?>

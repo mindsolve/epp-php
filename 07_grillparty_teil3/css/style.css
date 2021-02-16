@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: calibri, sans serif;
+    background-color: rgb(240, 240, 240);
+}
+
+h1 {
+    color: rgb(240, 107, 35);
+}
+
+
+p {
+    line-height: 1.4em;
+    font-size: 1.2em;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+img {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+thead tr {
+    background-color: rgb(240, 107, 35);
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: rgb(240, 240, 240);
+}
+
+tbody tr:nth-child(odd) {
+    background: rgb(200, 233, 238);
+}
+
+th, td {
+    padding: 5px 0;
+}
+
+th {
+    font-size: 1.1em;
+}
+
+
+
+
+
+
+

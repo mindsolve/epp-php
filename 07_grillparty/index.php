@@ -61,9 +61,15 @@ $num = mysqli_num_rows($res);
 
             <?php
 
+            // Solange noch ein Eintrag in mysql_fetch_assoc()...
             while ($row = mysqli_fetch_assoc($res)) {
                 echo "<tr>\n";
                 echo "<td>" . $row["gast_id"] . "</td>\n";
+                // Die Funktion htmlentities() sorgt dafür, dass ein enthaltener String nicht als HTML ausgewertet wird
+                // Beispiel: $row["vorname"] = "<h1>HACKERMAN</h1>"
+                // Ohne die Funktion würde tatsächlich eine h1-Überschrift im Quelltext landen,
+                // jetzt wird aber einfach nur Text ausgegeben (&lt;h1&gt;...)
+                // Somit kann ein Angreifer keinen schadhaften Quelltext platzieren
                 echo "<td>" . htmlentities($row["vorname"]) . "</td>\n";
                 echo "<td>" . htmlentities($row["nachname"]) . "</td>\n";
                 echo "<td>" . htmlentities($row["beitrag"]) . "</td>\n";
